@@ -14,7 +14,7 @@ class _MyFavouriteScreenState extends State<MyFavouriteScreen> {
   Widget build(BuildContext context) {
     //final favouriteProvider = Provider.of<FavouriteProvider>(context);
     return Scaffold(
-      appBar: AppBar(centerTitle: true, title: Text('Favourite'),),
+      appBar: AppBar(centerTitle: true, title: const Text('Favourite'),),
       body: Column(
         children: [
           Expanded(
@@ -27,7 +27,7 @@ class _MyFavouriteScreenState extends State<MyFavouriteScreen> {
                         value.removeItems(index);
                       },
                       title: Text('Item $index'),
-                      trailing: value.selectedItem.contains(index) ? Icon(Icons.favorite) : Icon(Icons.favorite_outline),
+                      trailing: value.selectedItem.contains(index) ? const Icon(Icons.favorite) : const Icon(Icons.favorite_outline),
                     );
                   });
             }),
